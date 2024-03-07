@@ -4,7 +4,16 @@ import Link from "next/link";
 import { api } from "~/utils/api";
 
 export default function Home() {
-  const hello = api.post.hello.useQuery({ text: "from tRPC" });
+  const { data: users, isLoading: userLoading } = api.user.getAllUsers.useQuery();
+
+  if(userLoading) {
+    return (
+      <div>
+        <h1>LOADING</h1>
+      </div>
+    );
+  }
+  if (!users) return <div>Something went wrong</div>;
 
   return (
     <>
@@ -42,10 +51,12 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <p className="text-2xl text-white">
-            {hello.data ? hello.data.greeting : "Loading tRPC query..."}
-          </p>
         </div>
+        <ul className="text-white">
+        {users.map((user) => (
+        <li key={user.id}><p>{user.name}  {user.email}</p></li>
+        ))}
+        </ul>
       </main>
     </>
   );
