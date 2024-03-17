@@ -2,27 +2,27 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="links">
-      <ul className="text-blue-700">
-        <li>
-          <Link href={"/"}>
-            <img src="/logo.png" width="65px" />
+    <div className="text-slate-200">
+      <ul className="list-none m-0 p-0 overflow-hidden bg-slate-600">
+        <li className="float-left">
+          <Link href={"/"} className="block text-center px-2 py-4">
+            <img src="/logo.png" width="20px" />
           </Link>
         </li>
-        <li>
-          <Link href={"/about"}>O nás</Link>
+        <li className="float-right">
+          <Link href={"/registration"} className="block text-center px-2 py-5">Registrace</Link>
         </li>
-        <li>
-          <Link href={"/contact"}>Kontakt</Link>
+        <li className="float-right">
+          <Link href={"/recent_years"} className="block text-center px-2 py-5">Předešlé roky</Link>
         </li>
-        <li>
-          <Link href={"/photogallery"}>Fotogalerie</Link>
+        <li className="float-right">
+          <Link href={"/photogallery"} className="block text-center px-2 py-5">Fotogalerie</Link>
         </li>
-        <li>
-          <Link href={"/recent_years"}>Předešlé roky</Link>
+        <li className="float-right">
+          <Link href={"/contact"} className="block text-center px-2 py-5">Kontakt</Link>
         </li>
-        <li>
-          <Link href={"/registration"}>Registrace</Link>
+        <li className="float-right">
+          <Link href={"/about"} className="block text-center px-2 py-5">O nás</Link>
         </li>
       </ul>
     </div>
