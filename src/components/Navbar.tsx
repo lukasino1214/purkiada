@@ -31,7 +31,7 @@ const Navbar = () => {
         </li>
         <li className="float-right">
           <Link href={"/registration"} className="block px-2 py-5 text-center">
-            Registrace
+            Aktuální ročník
           </Link>
         </li>
       </ul>

@@ -7,7 +7,7 @@ const Registration = () => {
       <Navbar />
       <div className="flex flex-col justify-center">
         <div className="">
-          <h1>Registrace</h1>
+          <h1>Aktuální ročník</h1>
           <br />
           <div>
             <p>
@@ -58,18 +58,10 @@ const Registration = () => {
             </p>
           </div>
           <br />
-
           <form>
             <input type="text" name="name" placeholder="jméno" required />
             <br />
             <input type="text" name="surname" placeholder="přijmení" required />
-            <br />
-            <input
-              type="date"
-              name="birthdate"
-              placeholder="datum narození"
-              required
-            />
             <br />
             <input type="email" name="email" placeholder="e-mail" required />
             <br />
@@ -79,20 +71,6 @@ const Registration = () => {
               placeholder="základní škola"
               required
             />
-            <br />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="telefon"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
-              required
-            />
-            <br />
-            <input type="text" name="address" placeholder="adresa" required />
-            <br />
-            <input type="text" name="postalcode" placeholder="PSČ" required />
-            <br />
-            <input type="text" name="town" placeholder="město" required />
             <br />
             <input type="checkbox" name="GDPR" placeholder="" required />
             Souhlasíte s podmínkami?
