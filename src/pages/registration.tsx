@@ -4,7 +4,6 @@ import Footer from "~/components/Footer";
 const Registration = () => {
   return (
     <div>
-      <Navbar />
       <div className="flex flex-col justify-center">
         <div className="">
           <h1>Aktuální ročník</h1>
@@ -78,7 +77,6 @@ const Registration = () => {
           
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
