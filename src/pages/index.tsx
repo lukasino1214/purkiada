@@ -5,7 +5,7 @@ import { api } from "~/utils/api";
 const Home = () => {
   return (
     <div>
-      <div className="h-[90vh] bg-[#5088b5]">
+      <div className="h-[92vh] bg-[#5088b5]">
         <img src="" alt="LogoHomepage" />
         <h1>
           Purkiáda je IT soutěž pro žáky 9. ročníku ZŠ pořádaná ročně na

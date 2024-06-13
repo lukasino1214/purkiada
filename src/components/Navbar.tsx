@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="text-[#5088b5] items-center align-middle h-[10vh]">
-      <ul className="list-none m-0 p-0 overflow-hidden bg-[#f0f2f2] flex items-center align-middle justify-between">
+    <div className="text-[#5088b5] items-center align-middle h-[8vh] text-[2vh] bg-[#f0f2f2]">
+      <ul className="list-none m-0 p-0 overflow-hidden flex items-center align-middle justify-between">
         <div>
           <li className="float-left">
-            <Link href={"/"} className="block text-center px-2 py-5">
-              <img src="/logo.png" width="20px" />
+            <Link href={"/"} className="block text-center px-2 py-3">
+              <img src="/logo.png" width="30px" />
             </Link>
           </li>
           <li className="float-left">
