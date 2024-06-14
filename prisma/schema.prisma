@@ -16,26 +16,11 @@ model User {
   surname  String?
   email String  @unique
   school String?
-  gdpr Value 
+  gdpr Boolean 
   admin Role @default(USER)
-  posts Post[]
-}
-
-enum Value {
-  YES
-  NO
 }
 
 enum Role {
   USER
   ADMIN
-}
-
-model Post {
-  id        Int     @id @default(autoincrement())
-  title     String
-  content   String?
-  published Boolean @default(false)
-  author    User    @relation(fields: [authorId], references: [id])
-  authorId  Int
 }

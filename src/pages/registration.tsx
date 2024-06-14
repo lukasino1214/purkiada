@@ -1,7 +1,18 @@
 import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
+import { api } from "~/utils/api";
 
 const Registration = () => {
+  const { data: users, isLoading: userLoading } = api.user.getAllUsers.useQuery();
+
+  if(userLoading) {
+    return (
+      <div>
+        <h1>LOADING</h1>
+      </div>
+    );
+  }
+  if (!users) return <div>Something went wrong</div>;
 
   return (
     <div className="h-[100vh]">
@@ -76,6 +87,13 @@ const Registration = () => {
           </div>
         </form>
       </div>
+
+      <ul className="text-black">
+        {users.map((user) => (
+        <li key={user.id}><p>{user.name} {user.surname} {user.email}</p></li>
+        ))}
+      </ul>
+
       <div className="absolute bottom-0 w-full">
         <Footer />
       </div>
