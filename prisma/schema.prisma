@@ -12,9 +12,23 @@ datasource db {
 
 model User {
   id    Int     @id @default(autoincrement())
-  email String  @unique
   name  String?
+  surname  String?
+  email String  @unique
+  school String?
+  gdpr Value 
+  admin Role @default(USER)
   posts Post[]
+}
+
+enum Value {
+  YES
+  NO
+}
+
+enum Role {
+  USER
+  ADMIN
 }
 
 model Post {
