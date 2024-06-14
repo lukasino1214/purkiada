@@ -1,5 +1,5 @@
 import { type AppType } from "next/app";
-import { Inter } from "next/font/google";
+import { Inter, Roboto, Roboto_Slab } from "next/font/google";
 
 import { api } from "~/utils/api";
 
@@ -10,13 +10,24 @@ import Footer from "~/components/Footer";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: 'swap',
 });
+const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  weight: "400",
+  display: 'swap',
+});
+const robotoSlab = Roboto_Slab({
+  subsets: ["latin"],
+  variable: "--font-roboto-slab",
+  display: 'swap',
+});
+
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={`font-sans ${inter.variable}`}>
-      <Navbar />
+    <main className={`font-roboto ${inter.variable} ${roboto.variable} ${robotoSlab.variable}`}>
       <Component {...pageProps} />
-      <Footer />
     </main>
   );
 };
