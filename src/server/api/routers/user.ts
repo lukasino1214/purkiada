@@ -7,12 +7,12 @@ export const userRouter = createTRPCRouter({
         return ctx.db.user.findMany();
     }),
 
-    sendForm: publicProcedure.query(async({ctx}) => {
-        return ctx.db.user.create({
-            data: {
+    // sendForm: publicProcedure.query(async({ctx}) => {
+    //     return ctx.db.user.create({
+    //         data: {
                 
-            }
-        })
-    })
+    //         }
+    //     })
+    // })
 });
   
