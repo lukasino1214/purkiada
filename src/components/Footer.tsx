@@ -13,10 +13,10 @@ const Footer = () => {
           </p>
         </div>
       </div> */}
-      <div className="w-full flex align-middle justify-center items-center text-[5vh] text-[#f0f2f2]">
-        <h1>Purkyňka</h1>
+      <div className="w-full flex align-middle justify-center items-center text-[#f0f2f2]">
+        <img src="/images/Purkynka_logo_bila.svg" className="w-[250px] h-[75px]" />
       </div>
-      <div className="w-full flex align-middle justify-center items-center text-[2vh] text-[#f0f2f2]">
+      <div className="w-full flex align-middle justify-center items-center text-[16px] text-[#f0f2f2]">
         <p>Copyright © 2024 Purkiáda 2024 | Lukáš Pokreis, Tibor Kovaljov, Jan Vavřík, Filip Takáč, Agáta Radana Langerová</p>
       </div>
     </div>
