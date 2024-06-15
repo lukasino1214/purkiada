@@ -6,6 +6,7 @@ import { api } from "~/utils/api";
 import "~/styles/globals.css";
 import Navbar from "~/components/Navbar";
 import Footer from "~/components/Footer";
+import Head from "next/head";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,6 +28,9 @@ const robotoSlab = Roboto_Slab({
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <main className={`font-roboto ${inter.variable} ${roboto.variable} ${robotoSlab.variable}`}>
+      <Head>
+        <title>Purkiáda</title>
+      </Head>
       <Component {...pageProps} />
     </main>
   );
