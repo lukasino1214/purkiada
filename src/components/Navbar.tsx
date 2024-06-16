@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="top-0 w-full sticky z-50 text-blue-pk font-robotoslab bg-gray-pk h-[64px] flex flex-row items-center align-middle justify-between">
+    <div className="top-0 w-full fixed z-50 text-blue-pk font-robotoslab bg-gray-pk h-[64px] flex flex-row items-center align-middle justify-between">
       <div className="h-full flex flex-row items-center align-middle justify-between gap-[16px] pl-[24px]">
         <Link href={"/"} className="block text-center">
           <img src="/images/Purkiada_logo_male.svg" className="w-[32px]" />
