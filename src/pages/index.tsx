@@ -7,7 +7,7 @@ import { api } from "~/utils/api";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navbar />
       <div className="bg-blue-pk h-[100vh] w-full">
         <div className="absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%] flex flex-row items-center gap-[10%]">
@@ -65,8 +65,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="about" className="bg-blue-pk text-gray-pk h-[60vh] relative w-full">
-        <div className="w-fit pl-[64px] pt-[64px]">
+      <div id="about" className="bg-blue-pk text-gray-pk py-[20vh] relative w-full">
+        <div className="w-fit pl-[64px]">
           <h1 className="font-robotoslab text-6xl font-bold">
             O čem Purkiáda vlastně je?
           </h1>
@@ -84,11 +84,15 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <img src="/images/Purkiada_snake.svg" className="absolute w-[50%] bottom-0 right-0" />
+        <img src="/images/Purkiada_snake.svg" className="absolute w-[50%] bottom-[16px] right-[16px]" />
+        <div className="absolute w-[35%] top-[24px] right-[64px]">
+          <img src="/images/obrázek-20240215-090006-d1143c55.jpeg"/>
+          <div className="absolute bottom-0 left-0 w-0 h-0 border-blue-pk border-l-[800px] border-l-[transparent] border-b-[120px]"></div>
+        </div>
       </div>
 
-      <div id="history" className="bg-gray-pk h-[80vh] relative w-full">
-        <div className="w-fit pl-[64px] pt-[64px]">
+      <div id="history" className="bg-gray-pk pt-[16vh] pb-[40vh] relative w-full">
+        <div className="w-fit pl-[64px]">
           <h1 className="text-blue-pk font-robotoslab text-6xl font-bold">
             Historie soutěže
           </h1>
@@ -102,6 +106,18 @@ const Home = () => {
           </p>
         </div>
         <img src="/images/Purkiada_tetris.svg" className="absolute w-[40%] bottom-0 left-[64px]" />
+        <div className="absolute w-[35%] top-0 right-[64px]">
+          <div className="relative z-10">
+            <div className="absolute top-0 left-0 w-0 h-0 border-gray-pk border-r-[800px] border-r-[transparent] border-t-[80px]"></div>
+            <img src="/images/obrázek-20220222-080143-a0147596.jpeg" />
+            <div className="absolute bottom-0 left-0 w-0 h-0 border-gray-pk border-l-[800px] border-l-[transparent] border-b-[80px]"></div>
+          </div>
+          <div className="relative">
+            <div className="absolute top-0 left-0 w-0 h-0 border-gray-pk border-r-[800px] border-r-[transparent] border-t-[80px]"></div>
+            <img src="/images/obrázek-20230214-073049-05a2f20a.jpeg" />
+            <div className="absolute bottom-0 left-0 w-0 h-0 border-gray-pk border-l-[800px] border-l-[transparent] border-b-[80px]"></div>
+          </div>
+        </div>
       </div>
 
       <div id="recent_years" className="bg-blue-pk py-[80px] w-full">
