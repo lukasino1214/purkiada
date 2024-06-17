@@ -11,7 +11,7 @@ export const userRouter = createTRPCRouter({
         name: z.string(),
         surname: z.string(),
         email: z.string().email(),
-        gdpr: z.boolean(),
+        gdpr: z.literal<boolean>(true),
         school: z.string()
     })).mutation(async ({ctx, input}) => {
         return ctx.db.user.create({

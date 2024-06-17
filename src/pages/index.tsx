@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       <Navbar />
-      <div className="bg-blue-pk h-[100vh] w-full">
+      <div className="bg-blue-pk h-[100vh] w-full relative max-sm:hidden">
         <div className="absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%] flex flex-row items-center gap-[10%]">
           <img src="/images/Purkiada_logo.svg" className="h-[60%]" />
           <h1 className="text-gray-pk text-[50px]">
@@ -40,7 +40,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="now" className="bg-gray-pk py-[64px] w-full">
+      <div id="now" className="bg-gray-pk py-[64px] w-full max-sm:hidden">
         <div className="w-fit pl-[64px]">
           <h1 className="text-blue-pk font-robotoslab text-6xl font-bold">
             Aktuální ročník
@@ -65,7 +65,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="about" className="bg-blue-pk text-gray-pk py-[20vh] relative w-full">
+      <div id="about" className="bg-blue-pk text-gray-pk py-[20vh] relative w-full max-sm:hidden">
         <div className="w-fit pl-[64px]">
           <h1 className="font-robotoslab text-6xl font-bold">
             O čem Purkiáda vlastně je?
@@ -91,7 +91,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="history" className="bg-gray-pk pt-[16vh] pb-[42vh] relative w-full">
+      <div id="history" className="bg-gray-pk pt-[16vh] pb-[42vh] relative w-full max-sm:hidden">
         <div className="w-fit pl-[64px]">
           <h1 className="text-blue-pk font-robotoslab text-6xl font-bold">
             Historie soutěže
@@ -120,7 +120,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="recent_years" className="bg-blue-pk py-[80px] w-full">
+      <div id="recent_years" className="bg-blue-pk py-[80px] w-full max-sm:hidden">
         <div className="text-gray-pk flex w-full items-center justify-center align-middle font-robotoslab text-6xl font-bold">
           <h1>Předešlé ročníky</h1>
         </div>
@@ -190,7 +190,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="contact" className="bg-gray-pk h-[60vh] w-full relative flex flex-row justify-between align-middle items-center">
+      <div id="contact" className="bg-gray-pk h-[60vh] w-full relative flex flex-row justify-between align-middle items-center max-sm:hidden">
         <div className="w-fit pl-[64px] pt-[64px] h-full">
           <h1 className="text-blue-pk text-pk-blue font-robotoslab text-6xl font-bold">
             Kontakty

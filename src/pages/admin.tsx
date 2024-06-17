@@ -46,9 +46,10 @@ const Admin = () => {
               <button onClick = {control} className="bg-yellow-500 px-4 py-2 text-lg text-black">Přihlásit se</button>
             </form>
         </div>
-        <Footer />
+        <div className="absolute bottom-0 w-full">
+          <Footer />
+        </div>
     </div>
-    
   )
 }
 

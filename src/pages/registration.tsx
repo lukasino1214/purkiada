@@ -49,37 +49,35 @@ const Registration = () => {
   return (
     <div className="h-[100vh]">
       <Navbar />
-      <div className="flex flex-col justify-center">
-        <h1 className="text-blue-pk flex justify-start p-20 text-6xl font-bold">
-          Registrace
-        </h1>
+      <div className="flex flex-col justify-center pt-[64px]">
+        <div className="text-blue-pk flex justify-start p-16 max-sm:flex-row max-sm:justify-center max-sm:align-middle max-sm:items-center max-sm:w-full">
+          <h1 className="text-6xl font-bold">
+            Registrace
+          </h1>
+        </div>
         <form onSubmit={handleSubmit}>
-          <div className="flex justify-start pl-16">
+          <div className="flex justify-start pl-16 max-sm:pl-0 max-sm:justify-center max-sm:align-middle max-sm:items-center">
             <div className="flex flex-col justify-start space-y-4">
-              <div className="flex justify-center pr-16 pl-2">
-                <div className="pb-4 pr-16">
-                  <input
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    type="text"
-                    name="name"
-                    placeholder="Jméno"
-                    required
-                    className="border border-black p-2"
-                  />
-                </div>
-                <div className="pb-4 pr-16">
-                  <input
-                    value={surname}
-                    onChange={(e) => setSurname(e.target.value)}
-                    type="text"
-                    name="surname"
-                    placeholder="Přijmení"
-                    required
-                    className="border border-black p-2"
-                  />
-                </div>
-                <div className="flex items-center">
+              <div className="grid justify-between gap-8 align-middle items-center grid-cols-3 max-sm:grid-cols-1">
+                <input
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  name="name"
+                  placeholder="Jméno"
+                  required
+                  className="border border-black p-2"
+                />
+                <input
+                  value={surname}
+                  onChange={(e) => setSurname(e.target.value)}
+                  type="text"
+                  name="surname"
+                  placeholder="Přijmení"
+                  required
+                  className="border border-black p-2"
+                />
+                <div className="max-sm:flex max-sm:justify-center max-sm:align-middle max-sm:items-center max-sm:flex-row max-sm:row-start-5">
                   <input
                     checked={gdpr}
                     onChange={(e) => setGdpr(e.target.checked)}
@@ -90,34 +88,26 @@ const Registration = () => {
                   />
                   <label className="pl-2">Souhlasím s GDPR</label>
                 </div>
+                <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                  className="border border-black p-2"
+                />
+                <input
+                  value={school}
+                  onChange={(e) => setSchool(e.target.value)}
+                  type="text"
+                  name="school"
+                  placeholder="Základní škola"
+                  required
+                  className="border border-black p-2"
+                />
               </div>
-              <div className="pl-4 pr-72">
-                <div className="flex justify-center">
-                  <div className="pb-4 pr-16">
-                    <input
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      type="email"
-                      name="email"
-                      placeholder="E-mail"
-                      required
-                      className="border border-black p-2"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      value={school}
-                      onChange={(e) => setSchool(e.target.value)}
-                      type="text"
-                      name="school"
-                      placeholder="Základní škola"
-                      required
-                      className="border border-black p-2"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="pb-8 pl-4">
+              <div className="pt-8 pb-8 max-sm:flex max-sm:flex-row max-sm:justify-center max-sm:align-middle max-sm:items-center">
                 <button
                   type="submit"
                   className="bg-yellow-500 px-4 py-2 text-lg text-black"
@@ -138,7 +128,7 @@ const Registration = () => {
         ))}
       </ul>
 
-      <div className="absolute bottom-0 w-full">
+      <div className="absolute bottom-0 max-sm:relative w-full">
         <Footer />
       </div>
     </div>
