@@ -2,26 +2,26 @@ import React, { useState } from 'react'
 import Footer from '~/components/Footer'
 import Navbar from '~/components/Navbar'
 
-const adminpage = () => {
+const Adminpage = () => {
   const logoff = () => {
     window.history.replaceState(null, '', '/')
   }
 
-  const [addPdf, useAddPdf] = useState(false);
-  const [addActualText, useAddActualText] = useState(false);
+  const [addPdf, setAddPdf] = useState(false);
+  const [addActualText, setAddActualText] = useState(false);
 
   const clickAddPdf = () => {
-    useAddPdf(true)
-    useAddActualText(false)
+    setAddPdf(true)
+    setAddActualText(false)
   }
 
   const clickAddActualText = () => {
-    useAddPdf(false)
-    useAddActualText(true)
+    setAddPdf(false)
+    setAddActualText(true)
   }
 
   const exportDatabase = () => {
-
+    console.log("test")
   }
 
   const cleanDatabase = () => {
@@ -62,4 +62,4 @@ const adminpage = () => {
   )
 }
 
-export default adminpage
+export default Adminpage
