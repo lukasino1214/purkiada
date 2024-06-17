@@ -9,7 +9,7 @@ const Admin = () => {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
 
-  let control = () => {
+  const control = () => {
     console.log(login, password);
     if(login == needed_admin_name && password == needed_password){
       window.history.replaceState(null, '', '/awserdtftbnjmkbuvzcrtedxrwsserctvbh')
@@ -17,7 +17,7 @@ const Admin = () => {
     else {
       alert ("Zadali jste špatné údaje!")
     }
-    }
+  }
     
   return (
     <div className="h-[100vh]">

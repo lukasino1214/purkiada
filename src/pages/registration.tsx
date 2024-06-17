@@ -28,10 +28,10 @@ const Registration = () => {
   if (!users) return <div>Something went wrong</div>;
 
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
   const [surname, setSurname] = useState('');
-  const [school, setSchool] = useState('');
   const [gdpr, setGdpr] = useState(false);
+  const [email, setEmail] = useState('');
+  const [school, setSchool] = useState('');
 
   const createUser = api.user.sendForm.useMutation();
 
