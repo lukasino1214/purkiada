@@ -2,8 +2,31 @@ import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 import { api } from "~/utils/api";
 import { useState } from "react";
+import { $Enums } from "@prisma/client";
 
-const CreateUserForm = ({ users }) => {
+type users = {
+  id: number;
+  name: string | null;
+  surname: string | null;
+  email: string;
+  school: string | null;
+  gdpr: boolean;
+  admin: $Enums.Role;
+}
+
+const Registration = () => {
+  const { data: users, isLoading: userLoading } = api.user.getAllUsers.useQuery();
+
+  if (userLoading) {
+    return (
+      <div>
+        <h1>LOADING</h1>
+      </div>
+    );
+  }
+
+  if (!users) return <div>Something went wrong</div>;
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [surname, setSurname] = useState('');
@@ -12,7 +35,7 @@ const CreateUserForm = ({ users }) => {
 
   const createUser = api.user.sendForm.useMutation();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
       await createUser.mutateAsync({ name, email, surname, school, gdpr });
@@ -22,6 +45,7 @@ const CreateUserForm = ({ users }) => {
       alert("Špatně zadané údaje!");
     }
   };
+
 
   return (
     <div className ="h-[100vh]">
@@ -119,23 +143,7 @@ const CreateUserForm = ({ users }) => {
         <Footer />
       </div>
     </div>
-  );
-};
-
-const Registration = () => {
-  const { data: users, isLoading: userLoading } = api.user.getAllUsers.useQuery();
-
-  if (userLoading) {
-    return (
-      <div>
-        <h1>LOADING</h1>
-      </div>
-    );
-  }
-
-  if (!users) return <div>Something went wrong</div>;
-
-  return <CreateUserForm users = {users} />;
+  )
 };
 
 export default Registration;
