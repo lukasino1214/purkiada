@@ -2,9 +2,8 @@ import React from "react"
 import Footer from "~/components/Footer"
 import Navbar from "~/components/Navbar"
 import { useState } from "react";
-import { redirect } from 'next/navigation'
 
-const admin = () => {
+const Admin = () => {
     const needed_admin_name = "purkiadaadmin"
     const needed_password = "1234"
     const [login, setLogin] = useState('');
@@ -53,4 +52,4 @@ const admin = () => {
   )
 }
 
-export default admin
+export default Admin;
