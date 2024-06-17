@@ -56,7 +56,7 @@ const Home = () => {
             </p>
             <br />
             <Link
-              href={"registration"}
+              href={"/registration"}
               className="block w-max bg-[#fab400] p-[16px] font-robotoslab text-[20px] font-bold"
             >
               REGISTROVAT SE
@@ -91,7 +91,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="history" className="bg-gray-pk pt-[16vh] pb-[40vh] relative w-full">
+      <div id="history" className="bg-gray-pk pt-[16vh] pb-[42vh] relative w-full">
         <div className="w-fit pl-[64px]">
           <h1 className="text-blue-pk font-robotoslab text-6xl font-bold">
             Historie soutěže
@@ -190,8 +190,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="contact" className="bg-gray-pk h-[60vh] w-full">
-        <div className="w-fit pl-[64px] pt-[64px]">
+      <div id="contact" className="bg-gray-pk h-[60vh] w-full relative flex flex-row justify-between align-middle items-center">
+        <div className="w-fit pl-[64px] pt-[64px] h-full">
           <h1 className="text-blue-pk text-pk-blue font-robotoslab text-6xl font-bold">
             Kontakty
           </h1>
@@ -205,7 +205,11 @@ const Home = () => {
             lenka.hruskova@purkynka.cz
           </a>
         </div>
+        <div className="h-[70%] pr-[10%]">
+          <img src="/mapy.PNG" className="h-full" />
+        </div>
       </div>
+
       <Footer />
     </div>
   );
