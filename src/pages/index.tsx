@@ -52,7 +52,7 @@ const Home = () => {
             {
               (!texts) ? <div></div> : texts.map(text => {
                 return (
-                  <p>
+                  <p key={text}>
                     {text.text}
                   </p>
                 )
@@ -133,7 +133,7 @@ const Home = () => {
             {
               (!pdfs) ? <div></div> : pdfs.map(pdf => {
                 return (
-                  <div className="pb-2 text-center text-[20px]">
+                  <div className="pb-2 text-center text-[20px]" key={pdf.id}>
                     {pdf.year} -{" "}
                     <a className="font-bold underline" href={pdf.link ?? ""}>
                       {pdf.name}
@@ -188,7 +188,7 @@ const Home = () => {
             {
               (!texts) ? <div></div> : texts.map(text => {
                 return (
-                  <p>
+                  <p key={text.id}>
                     {text.text}
                   </p>
                 )
@@ -253,7 +253,7 @@ const Home = () => {
             {
               (!pdfs) ? <div></div> : pdfs.map(pdf => {
                 return (
-                  <div className="pb-2 text-center text-[20px]">
+                  <div className="pb-2 text-center text-[20px]" key={pdf.id}>
                     {pdf.year} -{" "}
                     <a className="font-bold underline" href={pdf.link ?? ""}>
                       {pdf.name}
