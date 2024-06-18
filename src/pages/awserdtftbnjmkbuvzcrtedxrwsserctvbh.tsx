@@ -72,8 +72,8 @@ const Adminpage = () => {
   const createText = api.text.sendForm.useMutation();
 
   const handleTextSubmit = async () => {
+    api.text.deleteAllTexts.useQuery();
     try {
-      api.text.deleteAllTexts.useQuery();
       await createText.mutateAsync({text: text});
       alert("Text úspěšně přidáno do databáze!");
     } catch (error) {

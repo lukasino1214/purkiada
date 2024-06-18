@@ -162,10 +162,10 @@ const Home = () => {
           </a>
         </div>
         <div className="h-[70%] pr-[10%]">
-          <a href="https://www.google.com/maps/place/St%C5%99edn%C3%AD+pr%C5%AFmyslov%C3%A1+%C5%A1kola+Brno,+Purky%C5%88ova,+p%C5%99%C3%ADsp%C4%9Bvkov%C3%A1+organizace/@49.2251266,16.5783648,17z/data=!3m1!4b1!4m6!3m5!1s0x47129403c69be65b:0xd9c7d91a683162ab!8m2!3d49.2251231!4d16.5809397!16s%2Fg%2F12ckhjdjc?entry=ttu">
+          <a href="https://www.google.com/maps/place/St%C5%99edn%C3%AD+pr%C5%AFmyslov%C3%A1+%C5%A1kola+Brno,+Purky%C5%88ova,+p%C5%99%C3%ADsp%C4%9Bvkov%C3%A1+organizace/@49.2251266,16.5783648,17z/data=!3m1!4b1!4m6!3m5!1s0x47129403c69be65b:0xd9c7d91a683162ab!8m2!3d49.2251231!4d16.5809397!16s%2Fg%2F12ckhjdjc?entry=ttu" target="_blank">
             <img src="/mapy.PNG" className="h-full" />
           </a>
-          <a href="https://www.google.com/maps/place/St%C5%99edn%C3%AD+pr%C5%AFmyslov%C3%A1+%C5%A1kola+Brno,+Purky%C5%88ova,+p%C5%99%C3%ADsp%C4%9Bvkov%C3%A1+organizace/@49.2251266,16.5783648,17z/data=!3m1!4b1!4m6!3m5!1s0x47129403c69be65b:0xd9c7d91a683162ab!8m2!3d49.2251231!4d16.5809397!16s%2Fg%2F12ckhjdjc?entry=ttu">
+          <a href="https://www.google.com/maps/place/St%C5%99edn%C3%AD+pr%C5%AFmyslov%C3%A1+%C5%A1kola+Brno,+Purky%C5%88ova,+p%C5%99%C3%ADsp%C4%9Bvkov%C3%A1+organizace/@49.2251266,16.5783648,17z/data=!3m1!4b1!4m6!3m5!1s0x47129403c69be65b:0xd9c7d91a683162ab!8m2!3d49.2251231!4d16.5809397!16s%2Fg%2F12ckhjdjc?entry=ttu" target="_blank">
             <div className="text-center pt-8 text-[#3e6182] underline">Klikněte na mapu pro zobrazení</div>
           </a>
         </div>
@@ -266,7 +266,6 @@ const Home = () => {
         </div>
       </div>
 
-
       <div id="contact" className="bg-gray-pk h-[60vh] w-full relative flex flex-row justify-between align-middle items-center md:hidden p-[64px]">
         <div className="w-fit h-full">
           <h1 className="text-blue-pk flex flex-row w-full items-center justify-center align-middle font-robotoslab text-4xl font-bold">
@@ -282,10 +281,10 @@ const Home = () => {
             lenka.hruskova@purkynka.cz
           </a>
         <div className="pt-[32px]">
-          <a href="https://www.google.com/maps/place/St%C5%99edn%C3%AD+pr%C5%AFmyslov%C3%A1+%C5%A1kola+Brno,+Purky%C5%88ova,+p%C5%99%C3%ADsp%C4%9Bvkov%C3%A1+organizace/@49.2251266,16.5783648,17z/data=!3m1!4b1!4m6!3m5!1s0x47129403c69be65b:0xd9c7d91a683162ab!8m2!3d49.2251231!4d16.5809397!16s%2Fg%2F12ckhjdjc?entry=ttu">
+          <a href="https://www.google.com/maps/place/St%C5%99edn%C3%AD+pr%C5%AFmyslov%C3%A1+%C5%A1kola+Brno,+Purky%C5%88ova,+p%C5%99%C3%ADsp%C4%9Bvkov%C3%A1+organizace/@49.2251266,16.5783648,17z/data=!3m1!4b1!4m6!3m5!1s0x47129403c69be65b:0xd9c7d91a683162ab!8m2!3d49.2251231!4d16.5809397!16s%2Fg%2F12ckhjdjc?entry=ttu" target="_blank">
             <img src="/mapy.PNG" className="h-full" />
           </a>
-          <a href="https://www.google.com/maps/place/St%C5%99edn%C3%AD+pr%C5%AFmyslov%C3%A1+%C5%A1kola+Brno,+Purky%C5%88ova,+p%C5%99%C3%ADsp%C4%9Bvkov%C3%A1+organizace/@49.2251266,16.5783648,17z/data=!3m1!4b1!4m6!3m5!1s0x47129403c69be65b:0xd9c7d91a683162ab!8m2!3d49.2251231!4d16.5809397!16s%2Fg%2F12ckhjdjc?entry=ttu">
+          <a href="https://www.google.com/maps/place/St%C5%99edn%C3%AD+pr%C5%AFmyslov%C3%A1+%C5%A1kola+Brno,+Purky%C5%88ova,+p%C5%99%C3%ADsp%C4%9Bvkov%C3%A1+organizace/@49.2251266,16.5783648,17z/data=!3m1!4b1!4m6!3m5!1s0x47129403c69be65b:0xd9c7d91a683162ab!8m2!3d49.2251231!4d16.5809397!16s%2Fg%2F12ckhjdjc?entry=ttu" target="_blank">
             <div className="text-center pt-8 text-[#3e6182] underline">Klikněte na mapu pro zobrazení</div>
           </a>
         </div>
