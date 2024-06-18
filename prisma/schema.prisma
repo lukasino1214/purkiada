@@ -24,3 +24,15 @@ enum Role {
   USER
   ADMIN
 }
+
+model Pdf {
+  id    Int     @id @default(autoincrement())
+  name String?
+  year String?
+  link String?
+}
+
+model Text {
+  id    Int     @id @default(autoincrement())
+  text String?
+}

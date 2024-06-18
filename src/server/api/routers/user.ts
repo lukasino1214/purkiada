@@ -3,6 +3,10 @@ import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
 export const userRouter = createTRPCRouter({
+    deleteAllUsers: publicProcedure.query(async({ ctx }) => {
+        return ctx.db.user.deleteMany();
+    }),
+
     getAllUsers: publicProcedure.query(async({ ctx }) => {
         return ctx.db.user.findMany();
     }),

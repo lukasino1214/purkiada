@@ -17,14 +17,16 @@ const Navbar = () => {
           <h1>Purkiáda</h1>
         </Link>
       </div>
-      <div className="hidden h-fulls sm:flex flex-row items-center align-middle justify-between gap-[24px] pr-[24px] text-[20px]">
+
+      <div className="hidden h-fulls md:flex flex-row items-center align-middle justify-between gap-[24px] pr-[24px] text-[20px]">
         <Link href={"/#now"} className="">AKTUÁLNÍ ROČNÍK</Link>
         <Link href={"/#about"} className="">O NÁS</Link>
         <Link href={"/#history"} className="">HISTORIE SOUTĚŽE</Link>
         <Link href={"/#recent_years"} className="">PŘEDEŠLÉ ROČNÍKY</Link>
         <Link href={"/#contact"} className="">KONTAKT</Link>
       </div>
-      <button className='space-y-1 group sm:hidden relative p-2' onClick={click}>
+      
+      <button className='space-y-1 group md:hidden relative pr-[24px]' onClick={click}>
         <div className='w-6 h-1 bg-slate-500 rounded-[2px]'></div>
         <div className='w-6 h-1 bg-slate-500 rounded-[2px]'></div>
         <div className='w-6 h-1 bg-slate-500 rounded-[2px]'></div>       

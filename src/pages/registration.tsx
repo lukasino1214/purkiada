@@ -50,15 +50,15 @@ const Registration = () => {
     <div className="h-[100vh]">
       <Navbar />
       <div className="flex flex-col justify-center pt-[64px]">
-        <div className="text-blue-pk flex justify-start p-16 max-sm:flex-row max-sm:justify-center max-sm:align-middle max-sm:items-center max-sm:w-full">
+        <div className="text-blue-pk flex justify-start p-16 max-md:flex-row max-md:justify-center max-md:align-middle max-md:items-center max-md:w-full">
           <h1 className="text-6xl font-bold">
             Registrace
           </h1>
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="flex justify-start pl-16 max-sm:pl-0 max-sm:justify-center max-sm:align-middle max-sm:items-center">
+          <div className="flex justify-start pl-16 max-md:pl-0 max-md:justify-center max-md:align-middle max-md:items-center">
             <div className="flex flex-col justify-start space-y-4">
-              <div className="grid justify-between gap-8 align-middle items-center grid-cols-3 max-sm:grid-cols-1">
+              <div className="grid justify-between gap-8 align-middle items-center grid-cols-3 max-md:grid-cols-1">
                 <input
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -77,7 +77,7 @@ const Registration = () => {
                   required
                   className="border border-black p-2"
                 />
-                <div className="max-sm:flex max-sm:justify-center max-sm:align-middle max-sm:items-center max-sm:flex-row max-sm:row-start-5">
+                <div className="max-md:flex max-md:justify-center max-md:align-middle max-md:items-center max-md:flex-row max-md:row-start-5">
                   <input
                     checked={gdpr}
                     onChange={(e) => setGdpr(e.target.checked)}
@@ -107,7 +107,7 @@ const Registration = () => {
                   className="border border-black p-2"
                 />
               </div>
-              <div className="pt-8 pb-8 max-sm:flex max-sm:flex-row max-sm:justify-center max-sm:align-middle max-sm:items-center">
+              <div className="pt-8 pb-8 max-md:flex max-md:flex-row max-md:justify-center max-md:align-middle max-md:items-center">
                 <button
                   type="submit"
                   className="bg-yellow-500 px-4 py-2 text-lg text-black"
@@ -119,16 +119,7 @@ const Registration = () => {
           </div>
         </form>
       </div>
-
-      <ul className="text-black">
-        {users.map((user: User) => (
-          <li key={user.id}>
-            <p>{user.name} {user.surname} {user.email} {user.school} </p>
-          </li>
-        ))}
-      </ul>
-
-      <div className="absolute bottom-0 max-sm:relative w-full">
+      <div className="absolute bottom-0 max-md:relative w-full">
         <Footer />
       </div>
     </div>
