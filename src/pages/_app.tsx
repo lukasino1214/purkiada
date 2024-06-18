@@ -30,7 +30,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <main className={`font-roboto ${inter.variable} ${roboto.variable} ${robotoSlab.variable}`}>
       <Head>
         <title>Purkiáda</title>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
       <Component {...pageProps} />
     </main>
