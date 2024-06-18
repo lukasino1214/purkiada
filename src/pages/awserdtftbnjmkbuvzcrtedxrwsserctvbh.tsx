@@ -41,7 +41,7 @@ const Adminpage = () => {
       content += "\n";
     }
     
-    let encodedUri = encodeURI("data:text/csv;charset=utf-8," + content);
+    const encodedUri = encodeURI("data:text/csv;charset=utf-8," + content);
     window.open(encodedUri);
   }
 
@@ -73,7 +73,7 @@ const Adminpage = () => {
 
   const handleTextSubmit = async () => {
     try {
-      await api.text.deleteAllTexts.useQuery();
+      api.text.deleteAllTexts.useQuery();
       await createText.mutateAsync({text: text});
       alert("Text úspěšně přidáno do databáze!");
     } catch (error) {
