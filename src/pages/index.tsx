@@ -52,7 +52,7 @@ const Home = () => {
             {
               (!texts) ? <div></div> : texts.map(text => {
                 return (
-                  <p key={text}>
+                  <p key={text.id}>
                     {text.text}
                   </p>
                 )
